@@ -12,7 +12,9 @@
 		31DF2B5EFFA66D07131CD94825064964 /* StateMachineFW-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA03FE50672B900531E26C5ED09038 /* StateMachineFW-dummy.m */; };
 		4F57417806CE9C14EF1F69007C366D26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6E7694E9201768CF0081F83D /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7694E7201768CF0081F83D /* MyFramework.h */; };
-		6E7694EA201768CF0081F83D /* MyFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7694E8201768CF0081F83D /* MyFramework.m */; };
+		6E7694EA201768CF0081F83D /* MyFramework.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E7694E8201768CF0081F83D /* MyFramework.mm */; };
+		6EBA71002017767000AB0E47 /* MyGreeting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EBA70FE2017767000AB0E47 /* MyGreeting.cpp */; };
+		6EBA71012017767000AB0E47 /* MyGreeting.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6EBA70FF2017767000AB0E47 /* MyGreeting.hpp */; };
 		7191B1D5479C30711D30D23D3FB77A30 /* Pods-StateMachineFW_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C04CFC64E1B03A05F53FAF4D94E0AF69 /* Pods-StateMachineFW_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		988AA6FDB5869D77BDCE53761B4CDBC9 /* StateMachineFW-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6467862DDCD2DBDD0F2B0613E1FFAD9 /* StateMachineFW-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF0856D062D31036DA3456A6BEE9869B /* Pods-StateMachineFW_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4F6D5C38472B0531B6BFBFB6E5D1A /* Pods-StateMachineFW_Tests-dummy.m */; };
@@ -44,7 +46,9 @@
 		63800E7244358E2381B57189765D6EDF /* Pods-StateMachineFW_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StateMachineFW_Tests-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E7694E7201768CF0081F83D /* MyFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFramework.h; path = StateMachineFW/Classes/MyFramework.h; sourceTree = "<group>"; };
-		6E7694E8201768CF0081F83D /* MyFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFramework.m; path = StateMachineFW/Classes/MyFramework.m; sourceTree = "<group>"; };
+		6E7694E8201768CF0081F83D /* MyFramework.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyFramework.mm; path = StateMachineFW/Classes/MyFramework.mm; sourceTree = "<group>"; };
+		6EBA70FE2017767000AB0E47 /* MyGreeting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MyGreeting.cpp; path = StateMachineFW/Classes/MyGreeting.cpp; sourceTree = "<group>"; };
+		6EBA70FF2017767000AB0E47 /* MyGreeting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MyGreeting.hpp; path = StateMachineFW/Classes/MyGreeting.hpp; sourceTree = "<group>"; };
 		77A131D4398B4348B6A5E52DE01C06E4 /* Pods-StateMachineFW_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StateMachineFW_Example-umbrella.h"; sourceTree = "<group>"; };
 		791608DE1E79D814CAC1D59C21C9FC8F /* Pods-StateMachineFW_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StateMachineFW_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7EA4288EE7D3F6D282933583D0191180 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,8 +115,10 @@
 		20C7321C41F4F46AB4AAA1D60B6FBD74 /* StateMachineFW */ = {
 			isa = PBXGroup;
 			children = (
+				6EBA70FF2017767000AB0E47 /* MyGreeting.hpp */,
+				6EBA70FE2017767000AB0E47 /* MyGreeting.cpp */,
 				6E7694E7201768CF0081F83D /* MyFramework.h */,
-				6E7694E8201768CF0081F83D /* MyFramework.m */,
+				6E7694E8201768CF0081F83D /* MyFramework.mm */,
 				0BF4886AAB2D35F28845C554E763ABB1 /* Support Files */,
 			);
 			name = StateMachineFW;
@@ -216,6 +222,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBA71012017767000AB0E47 /* MyGreeting.hpp in Headers */,
 				2BCF949F625E019EA250B1F81879676E /* Pods-StateMachineFW_Example-umbrella.h in Headers */,
 				6E7694E9201768CF0081F83D /* MyFramework.h in Headers */,
 			);
@@ -341,8 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7694EA201768CF0081F83D /* MyFramework.m in Sources */,
+				6E7694EA201768CF0081F83D /* MyFramework.mm in Sources */,
 				1657B02B4909286B426818BDF28C236A /* Pods-StateMachineFW_Example-dummy.m in Sources */,
+				6EBA71002017767000AB0E47 /* MyGreeting.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
