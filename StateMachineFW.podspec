@@ -31,6 +31,7 @@ This is just to test the pods. will use for later
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'StateMachineFW/Classes/**/*'
+  s.ios.vendored_frameworks = "StateMachineFW.framework"
   
   # s.resource_bundles = {
   #   'StateMachineFW' => ['StateMachineFW/Assets/*.png']
