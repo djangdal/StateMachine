@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StateMachineFW_Example' do
+  pod 'StateMachineFW', :path => '../'
+
+  target 'StateMachineFW_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
