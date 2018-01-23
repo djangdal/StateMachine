@@ -10,6 +10,7 @@
 
 @property (nonatomic) int myInt;
 @property (nonatomic) NSString* myString;
+@property (nonatomic) double myDouble;
 
 -(NSString*)doGreeting;
 
