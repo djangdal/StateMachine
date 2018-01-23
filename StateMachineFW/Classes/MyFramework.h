@@ -11,4 +11,6 @@
 @property (nonatomic) int myInt;
 @property (nonatomic) NSString* myString;
 
+-(NSString*)doGreeting;
+
 @end
